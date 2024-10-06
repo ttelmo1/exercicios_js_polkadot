@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/icons/calculator-icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/styles/base.css" />
+    <link rel="stylesheet" href="assets/styles/error.css" />
+    <title>Simulador GAS Polkadot</title>
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__text">Lorem ipsum dolor</p>
+      <a
+        href="https://www.linkedin.com/in/wellington-ds-silva/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="header__profile-img"
+          src="assets/images/icons/linkedin-icon.svg"
+          alt="logo do linkedin"
+        />
+      </a>
+    </header>
+    <main class="main">
+      <section class="main__container">
+        <section class="main__content main__content--left">
+          <h1 class="main__content--left__title">Simulador GAS Polkadot</h1>
+          <form class="main__content--left__form">
+            <div class="form__group--gas">
+              <label for="gas" class="form__label">GAS</label>
+              <input
+                type="number"
+                id="gas"
+                name="gas"
+                class="form__input"
+                placeholder="Digite o valor da Transação (DOT)"
+              />
+              <p class="form__error">Digite um valor maior que zero</p>
+            </div>
+            <div class="form__group">
+              <div class="form__subgroup">
+                <label for="moeda" class="form__label">Selecione a moeda</label>
+                <select name="moeda" id="moeda" class="form__select"></select>
+              </div>
+              <div class="form__subgroup">
+                <label for="complexividade" class="form__label"
+                  >Complexidade da transaçao</label
+                >
+                <select
+                  name="complexidade"
+                  id="complexidade"
+                  class="form__select"
+                >
+                  <option value="baixa">Baixa</option>
+                  <option value="media">Média</option>
+                  <option value="alta">Alta</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="form__button">Calcular</button>
+          </form>
+        </section>
+        <section class="main__content main__content--right">
+          <!--Quando clicar no botão tenho que fazer essa div sumir
+          <div class="main__content--right__initial">
+            <img
+              class="main__content--right__load-img"
+              src="assets/images/illustrations/loading.svg"
+              alt="Imagem de um load"
+            />
+            <p class="main__content--right__history-text">
+              O histórico irá aparecer aqui assim que a primeira simulação for
+              feita
+            </p>
+          </div>-->
+          <div class="main__content--right__result">
+            <h2 class="main__content--right__title">Resultado</h2>
+            <div class="main__content--right__summary">
+              <div class="summary__transactions">
+                <p class="summary__transactions-label">n.º de transações:</p>
+                <p class="summary__transactions-value">0</p>
+              </div>
+              <div class="summary__timer">
+                <p class="summary__timer-label">Temporizador:</p>
+                <p class="summary__timer-value">01:00</p>
+              </div>
+            </div>
+            <div class="main__content--right__details">
+              <div class="details__info"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+  <script type="module" src="assets/js/main.js"></script>
+</html>

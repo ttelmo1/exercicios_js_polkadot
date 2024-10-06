@@ -1,0 +1,38 @@
+.main__content--right__details{
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 15px;
+}
+.summary__transactions-label,.summary__timer-label{
+    font-size:1.5rem;
+   
+}
+.summary__transactions-value , .summary__timer-value , .details__transaction-number{
+    font-size: 1.8rem;
+    font-weight: 400;
+    
+}
+.details__transaction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.details__info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.c_card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 50px;
+    padding: 0.5rem;
+    background-color: #fff;
+}
+.info__transaction,.info__gas{
+    font-size:1.2rem;
+}

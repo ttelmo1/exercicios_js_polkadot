@@ -1,0 +1,56 @@
+.form__group--gas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.form__group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.form__subgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form__label {
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: ;
+  color: ;
+}
+.form__input {
+  min-height: 44px;
+
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.form__input:hover {
+}
+.form__input::placeholder {
+}
+
+.form__select {
+  min-height: 44px;
+  font-size: 1rem;
+}
+.form__select: {
+}
+
+.form__button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-height: 44px;
+  border-radius: 1rem;
+  background-color: #f50057;
+  color: #fff;
+}
+.form__button:disabled{
+    cursor: not-allowed;
+    background-color:#ff99b3 ;
+}
+.form__button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

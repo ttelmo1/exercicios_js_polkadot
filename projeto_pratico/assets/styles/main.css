@@ -1,0 +1,74 @@
+@import url("form.css");
+
+main {
+  padding: 3.5rem 0;
+  font-family: "Saira", sans-serif;
+}
+.main__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__content {
+  padding: 2rem;
+  max-width: 1200px;
+}
+.main__content--left,
+.main__content--right {
+    min-width: 550px;
+    max-width: 600px;
+    height: 100%;
+    
+}
+
+.main__content--left {
+}
+.main__content--right{
+  
+}
+.main__content--left__title ,.main__content--right__title{
+  font-size: 2.5rem;
+  width: max-content;
+}
+.main__content--left__form{
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    gap: 1.5rem;   
+}
+.main__content--right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.main__content--right__history-text {
+  width:100% ;
+  word-wrap: break-word;
+  line-height: 1.25;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.main__content--right__result{
+    display: flex;
+    flex-direction: column;
+   
+    
+    width: 100%;
+    height:100%;
+}
+
+.main__content--right__summary{
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+
